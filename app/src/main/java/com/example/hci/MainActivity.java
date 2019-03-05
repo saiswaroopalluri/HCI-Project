@@ -183,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
                 releaseMediaRecorder(); // release the MediaRecorder object
                 Toast.makeText(MainActivity.this, "Video captured!", Toast.LENGTH_LONG).show();
                 recording = false;
+
                 capture.setBackgroundResource(R.drawable.play);
             } else {
                 if (!prepareMediaRecorder()) {
